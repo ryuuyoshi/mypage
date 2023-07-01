@@ -1,0 +1,399 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.title h1{
+  font-family: 'Reggae One', cursive;
+  font-size: 100px;
+  padding: 15vw 0 3vw 0;
+  text-align: center;
+  color: rgb(48, 48, 231);
+}
+.title h3{
+  font-family: 'Londrina Outline', cursive;
+  padding: 5vw 0 3vw 5vw;
+  color: rgb(43, 43, 247);
+  font-size: 50px;
+  text-align: center;
+}
+#tab {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  z-index: 5;
+}
+#tab li  {
+  display: block;
+  width: 200px;
+  padding: 10px 25px;
+  z-index: 5;
+}
+#tab a {
+  font-family: Regular, cursive;
+  font-weight: bold;
+  font-size: calc(26px + 8 * ((100vw - 800px) / 800));
+  color: rgb(255, 255, 255);
+  z-index: 5;
+}
+#tab a:hover {
+  color:red;
+}
+#a {
+  background-color: rgba(248, 229, 204,1.0);
+}
+
+#etc {
+  
+  background-color: rgba(102, 233, 172,1.0);
+}
+
+#a,#b,#c {
+ text-align: center;
+ margin: 0;
+ width: 100vw;
+ height: 100vh;
+ color:rgb(14, 14, 14);
+}
+
+/*for partial aninimation*/
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+.context {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.area{
+  background: -moz-linear-gradient(top, #6fe1ee 30%, #63d669 60%, #748af8);
+  background: -webkit-linear-gradient(top,#6fe1ee 30%, #63d669 60%, #748af8);
+  background: linear-gradient(to bottom,#6fe1ee 30%, #63d669 60%, #748af8);
+  width: 100%;
+  height:100vh;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+}
+
+.circles{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+.circles li{
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.256);
+  animation: animate 25s linear infinite;
+  bottom: -100px;
+}
+
+.circles li:nth-child(1){
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(2){
+  left: 10%;
+  width: 5px;
+  height: 5px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 1%;
+    height: 10px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 75px;
+    height: 75px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+/* profile page */
+
+.content {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+
+}
+
+.prof-main-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: #f5c63acc;
+  position: relative;
+}
+
+.left-wrapper{
+  width: 60%;
+  height: 100%;
+  background-color: rgb(243, 223, 223);
+  display: flex;
+
+
+}
+.left-image img {
+ justify-items:center;
+ margin-top: 30%;
+ width: 150px;
+ height:150px;
+}
+
+.left-1 {
+  height: 100%;
+  width: 30%;
+
+}
+.left-2 {
+  height: 100%;
+  width: 70%;
+  /*transform: skew(5deg);*/
+}
+
+.right-wrapper {
+  width: 40%;
+  height: 100%;
+  background-color: rgb(186, 231, 156);
+  padding-left: 20px;
+}
+.info-wrapper {
+  padding-bottom: %;
+
+}
+.info-left{
+  width: 100%;
+  height: 65%;
+  padding-top: 50px;
+}
+.right-top {
+  width: 100%;
+  height:15%;
+  text-align: center;
+  padding: 2%;
+}
+
+
+.info-left li{
+  border-bottom: #031072 solid 2px;
+  width:75%;
+}
+.element1 {
+  width: 30%;
+  margin: 5px;
+}
+.element2 {
+  width :95%;
+}
+
+.element2 span:hover  {
+  cursor: pointer;
+}
+
+
+.answer {
+  display: none;
+  height: auto;
+  border: rgb(111, 70, 4) double 2px;
+  border-radius: 8px;
+  width: 100%;
+  margin-left: 5px;
+  line-height: 1rem;
+  background-color: white;
+  text-align: center;
+  font-size: 16px;
+}
+
+
+
+.answer li{
+  width: 100%;
+  margin-left: 5px;
+  line-height: 1rem;
+  font-size: 16px;
+}
+
+
+#icom {
+ position: absolute;
+ bottom: 5px;
+ right: 5px;
+}
+
+
+@keyframes animate {
+
+  0%{
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  100%{
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0.3;
+    border-radius: 50%;
+  }
+}
+
+
+/* ~ profile page's css~*/
+#prof,#skill,#etc {
+  width: 100vw;
+  height: 100vh;
+  font-size: 20px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+    .answer {
+      display: none;
+      border: 1px solid rgb(11, 154, 232);
+      background-color: #edece9;
+      font-size: 16px;
+      text-align: left;
+      padding-right: 30px;
+    }
+    
+    .main-bg {
+      height: auto;
+    }
+    .footer-bg {
+      height: 20%;
+    }
+    
+  }
+}
+
+@media screen and (max-width: 670px){
+  body {
+    font-size: 10px;
+
+  }
+}
+
+
+/* skill page */
+
+.categolyes {
+ display: flex;
+ flex-wrap: wrap;
+}
+
+#skill,#skil-wrapper {
+ width: 100vw;
+ height: auto;
+ background-color: rgba(121, 134, 227,1.0);
+ position: relative;
+}
+#skill h1 {
+ text-align: center;
+ padding-top: 50px;
+ font-family: 'Reggae One', cursive;
+}
+.categolry {
+ width: 250px;
+ height: 400px;
+ border: black solid 1px;
+ margin:50px 25px 30px 55px;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+background-color: white;
+}
+.skill-text {
+  border:rgb(16, 16, 164) solid 1px;
+  padding: 10px;
+  margin: 5px;
+  background-color: rgb(202, 235, 235);
+}
+
+.logo-image img {
+ width: 200px;
+ height: 200px;
+}
+
+#skill-back {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+
+
+
+#etc-content {
+  position: relative;
+}
+
+#etc-back {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}

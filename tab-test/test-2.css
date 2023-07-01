@@ -1,0 +1,61 @@
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 3px;
+  color: #989898;
+}
+table th{
+ width: 25%;
+ padding: 10px;
+ text-align: left;
+ vertical-align: middle;
+ background-color: #F7F7F7;
+}
+table td{
+ padding: 10px;
+ background-color: #F7F7F7;
+}
+.free {
+  background: #29BA9B;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px 4px 0 0;
+}
+.pro {
+  background: #50BA6F;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px 4px 0 0;
+}
+.border0 {
+  border: none;
+  background-color: #fff;
+}
+.course {
+  display: none;
+  border-top: 1px dotted #A6A6A6;
+  padding-top: 10px;
+}
+.course dt {
+  float: left;
+  clear: right;
+}
+.course dd {float: right;}
+.close {
+ display: none;
+}
+.open,
+.close {
+  float: right;
+  text-decoration: none;
+  color: #fff;
+  position:relative;
+  background: #E2503C;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+}
